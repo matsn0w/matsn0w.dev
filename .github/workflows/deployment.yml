@@ -26,6 +26,9 @@ jobs:
       - name: Compile assets
         run: npm run build
 
+      - name: Install rsync
+        run: apt-get install rsync -y
+
       - name: Deploy to production server
         uses: easingthemes/ssh-deploy@main
         env:
