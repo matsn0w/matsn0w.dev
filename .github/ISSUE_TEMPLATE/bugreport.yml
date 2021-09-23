@@ -1,31 +1,23 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: [BUG] <title>
+labels: [new, possible bug]
+
 assignees:
   - matsn0w
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+        Thanks for taking the time to fill out this bug report
  
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Describe the bug
+      description: Please be as detailed as possible and describe what you expected to happen.
+      placeholder: Tell me what you see!
     validations:
       required: true
 
@@ -38,12 +30,11 @@ body:
         - Firefox
         - Chrome
         - Safari
-        - Microsoft Edge
-  
-  - type: textarea
-    id: logs
+        - Edge
+        - Internet Explorer
+
+  - type: markdown
+    id: reproduction
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  
+      label: Steps to reproduce
+      description: Explain which steps have to be taken to reproduce the issue.
