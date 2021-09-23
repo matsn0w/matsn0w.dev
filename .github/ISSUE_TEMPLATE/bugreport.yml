@@ -38,3 +38,4 @@ body:
     attributes:
       label: Steps to reproduce
       description: Explain which steps have to be taken to reproduce the issue.
+      placeholder: Step 1, step 2, step 3, step 400...
