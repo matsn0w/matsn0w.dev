@@ -33,7 +33,7 @@ body:
         - Edge
         - Internet Explorer
 
-  - type: markdown
+  - type: textarea
     id: reproduction
     attributes:
       label: Steps to reproduce
