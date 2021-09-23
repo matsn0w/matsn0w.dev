@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Install rsync
-        run: apt-get install rsync -y
+        run: sudo apt-get install rsync -y
 
       - name: Deploy to production server
         uses: easingthemes/ssh-deploy@main
