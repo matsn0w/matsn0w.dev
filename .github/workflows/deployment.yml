@@ -26,9 +26,6 @@ jobs:
       - name: Compile assets
         run: npm run build
 
-      - name: Install rsync
-        run: sudo apt-get install rsync -y
-
       - name: Deploy to production server
         uses: appleboy/scp-action@master
         with:
