@@ -32,6 +32,6 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          rm: true
-          source: "/"
+          source: "."
           target: "${{ secrets.REMOTE_TARGET }}"
+          rm: true
