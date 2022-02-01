@@ -3,7 +3,7 @@
   "author": "matsn0w",
   "description": "My personal website.",
   "version": "1.0.0",
-  "main": "index.html",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matsn0w/matsn0w.dev.git"
@@ -13,13 +13,16 @@
   },
   "homepage": "https://github.com/matsn0w/matsn0w.dev#readme",
   "scripts": {
-    "build": "sass src/scss/app.scss dist/css/app.css -s compressed",
-    "watch": "sass src/scss/app.scss dist/css/app.css -s compressed -w"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4"
   },
   "devDependencies": {
-    "sass": "^1.42.0"
+    "file-loader": "^6.2.0",
+    "sass": "^1.49.4",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }
