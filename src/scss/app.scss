@@ -19,6 +19,7 @@ body {
     background: $background;
     color: $text;
     overflow: hidden;
+    text-align: center;
 }
 
 main {
@@ -66,5 +67,9 @@ main {
                 transform: translateY(-.5rem);
             }
         }
+    }
+
+    #copiedMessage {
+        visibility: hidden;
     }
 }
