@@ -19,6 +19,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
     "file-loader": "^6.2.0",
     "sass": "^1.49.4",
     "sass-loader": "^12.4.0",
