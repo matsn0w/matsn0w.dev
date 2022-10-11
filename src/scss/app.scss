@@ -78,13 +78,35 @@ main {
     #me {
         max-width: 125px;
         margin: 3rem 0;
+        animation: spin 2s linear infinite;
+        animation-play-state: paused;
         
         @keyframes spin {
             100% { transform: rotate(360deg); }
         }
+        
+        &:hover {
+            animation-play-state: running;
+        }
+    }
+
+    #qr {
+        background-color: $background;
+        z-index: 100;
+        max-width: 150px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        animation: scale .5s linear forwards;
+        animation-play-state: paused;
+        transform-origin: top left;
+
+        @keyframes scale {
+            100% { transform: scale(2); }
+        }
 
         &:hover {
-            animation: spin 2s linear infinite;
+            animation-play-state: running;
         }
     }
 }
