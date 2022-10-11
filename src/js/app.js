@@ -1,13 +1,18 @@
-const disocrdTag = 'matsn0w#4402'
-const discordButton = document.querySelector('#discord')
-const copiedMessage = document.querySelector('#copiedMessage')
+import confetti from 'canvas-confetti';
 
-discordButton.addEventListener('click', (e) => {
-    console.log(`Add me on Discord: ${disocrdTag}`)
+const me = document.querySelector('#me');
 
-    // copy text to clipboard
-    navigator.clipboard.writeText(disocrdTag)
+me.addEventListener('click', (e) => {
+    const tada = new Audio('dist/audio/tada.ogg');
+    tada.play();
 
-    // show a message
-    copiedMessage.style.visibility = 'visible'
-})
+    confetti({
+        spread: 360,
+        particleCount: 150,
+        disableForReducedMotion: true,
+        origin: {
+            x: e.clientX / window.innerWidth,
+            y: e.clientY / window.innerHeight,
+        },
+    })
+});
