@@ -16,7 +16,8 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "canvas-confetti": "^1.5.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.4",
