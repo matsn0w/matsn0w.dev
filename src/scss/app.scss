@@ -50,7 +50,7 @@ main {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 2.5rem;
 
         @media (max-width: 768px) {
             position: absolute;
@@ -61,16 +61,30 @@ main {
             text-decoration: none;
             color: $text;
             font-size: 2rem;
-            transition: transform .25s ease-in-out;
 
             &:hover {
-                transform: translateY(-.5rem);
+                transform: scale(1.5);
             }
+
+            &.github:hover {color: $github;}
+            &.twitter:hover {color: $twitter;}
+            &.instagram:hover {color: $instagram;}
+            &.linkedin:hover {color: $linkedin;}
+            &.discord:hover {color: $discord;}
+            &.email:hover {color: $email;}
         }
     }
 
-    img {
+    #me {
         max-width: 125px;
         margin: 3rem 0;
+        
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        &:hover {
+            animation: spin 2s linear infinite;
+        }
     }
 }
