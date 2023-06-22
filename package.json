@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/matsn0w/matsn0w.dev#readme",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -25,6 +26,7 @@
     "sass": "^1.55.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.76.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
   }
 }

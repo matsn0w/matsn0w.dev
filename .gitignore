@@ -1,2 +1,4 @@
 node_modules/
-dist/
+public/css/
+public/js/
+public/webfonts/
