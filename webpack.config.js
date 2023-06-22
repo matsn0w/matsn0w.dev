@@ -5,7 +5,7 @@ module.exports = {
   entry: ['./src/js/app.js', './src/scss/app.scss'],
   output: {
     filename: 'js/app.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public/dist'),
   },
   plugins: [
     new CopyWebpackPlugin({
