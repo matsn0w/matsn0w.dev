@@ -1,0 +1,6 @@
+# custom redirects
+Redirect 301 /github https://github.com/matsn0w
+Redirect 301 /twitter https://twitter.com/matsn0w
+Redirect 301 /twitter https://instagram.com/matsn0w
+Redirect 301 /linkedin https://nl.linkedin.com/in/bart-scholtus
+Redirect 301 /discord https://discord.gg/XcctTAuT5R
